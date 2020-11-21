@@ -1,0 +1,36 @@
+﻿
+@model Final.Models.Comp
+@{
+    ViewBag.Title = "Adding Computer";
+}
+    <form asp-action="Create" asp-controller="Comps">
+        <div class="form-group">
+            <label asp-for="comp_name" class="control-label">Name</label>
+            <input type="text" asp-for="comp_name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="desc" class="control-label">Description</label>
+            <input type="text" asp-for="desc" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="price" class="control-label">Price</label>
+            <input type="number" asp-for="price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="img" class="control-label">Image</label>
+            <input type="text" asp-for="img" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="categoryID" class="control-label">Image</label>
+            <select type="text" asp-for="categoryID" class="form-control">
+                <option value="1">High Gaming Level</option>
+                <option value="2">Middle Gaming Level</option>
+                <option value="3">Low Gaming Level</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Add" class="btn btn-outline-primary" />
+        </div>
+    </form>
+      
